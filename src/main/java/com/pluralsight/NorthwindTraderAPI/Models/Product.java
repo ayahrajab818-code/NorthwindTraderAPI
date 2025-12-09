@@ -29,6 +29,8 @@ public class Product {
         this.name = name;
     }
 
+    //comment
+
     public int getCategoryId() {
         return categoryId;
     }
