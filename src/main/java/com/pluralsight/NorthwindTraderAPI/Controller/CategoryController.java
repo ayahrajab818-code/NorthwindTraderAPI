@@ -1,4 +1,4 @@
-package com.pluralsight.NorthwindTraderAPI;
+package com.pluralsight.NorthwindTraderAPI.Controller;
 
 public class CategoryController {
 }
