@@ -1,17 +1,15 @@
 package com.pluralsight.NorthwindTraderAPI.Models;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Product {
     private int productId;
     private String name;
     private int categoryId;
     private double price;
 
-    public Product(int productId, String name, int categoryId, double price) {
-        this.productId = productId;
-        this.name = name;
-        this.categoryId = categoryId;
-        this.price = price;
-    }
+    @Autowired
+    public Product(){}
 
     public int getProductId() {
         return productId;
@@ -46,4 +44,15 @@ public class Product {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "productId=" + productId +
+                ", name='" + name + '\'' +
+                ", categoryId='" + categoryId + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
+
